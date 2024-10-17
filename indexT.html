@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project, test</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+    <!-- чтобы появилась иконка на странице -->
+    <link rel="icon" type="image/x-icon" href="./images/favonics/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favonics/apple-touch-icon.png">
+
+</head>
+
+<body>
+    <header class="header"> <!-- шапка -->
+
+        <div class="container"> <!-- div - контейнер -->
+            <div class="header-row">
+                <!-- srcset - для отображения в 4к -->
+                <img src="./images/header/photo.jpg" srcset="./images/header/photo@2x.jpg 2x" alt="Photo"
+                    class="header-img">
+
+                <div class="header-desc">
+
+                    <h1 class="header-title">Korolews</h1>
+                    <p class="header-text">фрилансер, веб-разработчик,<br> создание сайтов</p>
+
+                    <div class="header-btns"> <!-- btns - сщкращение от button -->
+                        <a href="#portfolio" class="btn">Портфолио</a> <!-- btns - добавить ID в section portfolio -->
+                        <a href="#contacts" class="btn-outline">Контакты</a>
+                        <!-- btns - добавить ID в section contacts -->
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- для загрузки видеофайла на страницу -->
+        <video class="header-video" autoplay muted loop>
+            <source type="video/mp4" src="./video/6330779-hd_1280_720_30fps.mp4">
+        </video>
+    </header>
+
+    <main>
+        <section class="portfolio" id="portfolio">
+            <div class="conteiner">
+                <h2 class="portfolio-title">Portfolio</h2>
+
+                <div class="projects"> <!-- общая обертка для проектов из Портфолио -->
+                    <!-- 1 project -->
+                    <article class="project">
+                        <a href="./firstexample.html">
+                            <!-- в начале ставим так - a href="#!" , когда будет готова новая страница с указанным проектом, можно прописать к нему ссылку-->
+                            <img src="./images/portfolio/project-01.jpg"
+                                srcset="./images/portfolio/project-01@2x.jpg 2x" alt="" class="project-img">
+                        </a>
+                        <h3 class="project-title"><a href="./firstexample.html">Сайт магазина мебели</a></h3>
+                    </article>
+                    <!-- 2 project -->
+                    <article class="project">
+                        <a href="./secondexample.html">
+                            <img src="./images/portfolio/project-02.jpg"
+                                srcset="./images/portfolio/project-02@2x.jpg 2x" alt="" class="project-img">
+                        </a>
+                        <h3 class="project-title"><a href="./secondexample.html">Сайт туристического агентства</a></h3>
+                    </article>
+                    <!-- 3 project -->
+                    <article class="project">
+                        <a href="./thirdexample.html">
+                            <img src="./images/portfolio/project-03.jpg"
+                                srcset="./images/portfolio/project-03@2x.jpg 2x" alt="" class="project-img">
+                        </a>
+                        <h3 class="project-title"><a href="./thirdexample.html">Сайт жилого комплекса</a></h3>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <h2 class="contacts-title">Contacts</h2>
+
+                <div class="messengers"> <!--target="_blank" чтобы открывалось в новом окне -->
+                    <a href="#1" target="_blank" class="messenger">
+                        <img src="./images/contacts/telegram.svg" alt="Telegram">Написать в
+                        Telegram</a>
+                    <a href="#2" target="_blank" class="messenger">
+                        <img src="./images/contacts/whatsapp.svg" alt="Whatsapp">Отправить в
+                        WhatsApp</a>
+                    <a href="#2" target="_blank" class="messenger">
+                        <img src="./images/contacts/Group.svg" alt="VK">Связаться
+                        Вконтакте</a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+            <div class="footer-inner">
+                <p>© Korolews HTML верстальщик, создание сайтов</p>
+                <p><a href="#1" target="_blank">💻 Макет </a></p>
+
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
